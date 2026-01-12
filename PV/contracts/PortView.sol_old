@@ -1,0 +1,26 @@
+﻿// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "./core/TreasuryVault.sol";
+import "./core/PolicyEngine.sol";
+import "./core/PaymentScheduler.sol";
+
+contract PortView {
+    TreasuryVault public vault;
+    PolicyEngine public policy;
+    PaymentScheduler public scheduler;
+
+    constructor(
+        address admin,
+        uint256 maxPayment
+    ) {
+        policy = new PolicyEngine(admin, maxPayment);
+        vault = new TreasuryVault(admin);
+        scheduler = new PaymentScheduler(
+            address(vault),
+            address(policy)
+        );
+        vault.authorizeScheduler(address(scheduler), true);
+    }
+}
