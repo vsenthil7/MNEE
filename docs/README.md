@@ -8,7 +8,9 @@ This repository is structured around a strict separation between **core executio
 
 ## Repository Structure
 
+## Repository Structure
 
+```text
 MNEE/
 ├─ core/                  # Shared execution primitives (no product logic)
 ├─ PFTA/                  # Programmable Finance & Treasury Automation
@@ -16,9 +18,7 @@ MNEE/
 ├─ docs/                  # Architecture and design notes
 ├─ bootstrap-core-and-pv.ps1
 └─ .gitignore
-
-
-
+```
 ---
 
 ## Core Layer (`/core`)
@@ -147,6 +147,7 @@ Repository history has been rewritten to remove committed dependencies.
 ## License
 
 MIT
+
 
 
 
