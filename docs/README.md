@@ -8,7 +8,7 @@ This repository is structured around a strict separation between **core executio
 
 ## Repository Structure
 
-```text
+
 MNEE/
 ├─ core/                  # Shared execution primitives (no product logic)
 ├─ PFTA/                  # Programmable Finance & Treasury Automation
@@ -147,6 +147,7 @@ Repository history has been rewritten to remove committed dependencies.
 ## License
 
 MIT
+
 
 
 
