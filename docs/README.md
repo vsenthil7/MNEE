@@ -8,12 +8,15 @@ This repository is structured around a strict separation between **core executio
 
 ## Repository Structure
 
+```text
 MNEE/
-├── core/ # Shared execution primitives (no product logic)
-├── PFTA/ # Programmable Finance & Treasury Automation
-├── PV/ # PortView — Portfolio orchestration kernel
-├── docs/ # Architecture and design notes
-└── bootstrap-core-and-pv.ps1
+├─ core/                  # Shared execution primitives (no product logic)
+├─ PFTA/                  # Programmable Finance & Treasury Automation
+├─ PV/                    # PortView — portfolio orchestration kernel
+├─ docs/                  # Architecture and design notes
+├─ bootstrap-core-and-pv.ps1
+└─ .gitignore
+
 
 
 ---
@@ -144,6 +147,7 @@ Repository history has been rewritten to remove committed dependencies.
 ## License
 
 MIT
+
 
 
 
