@@ -122,6 +122,7 @@ artifacts/
 cache/
 coverage/
 .env
+```
 
 Repository history has been rewritten to remove committed dependencies.
 
@@ -149,6 +150,7 @@ Repository history has been rewritten to remove committed dependencies.
 ## License
 
 MIT
+
 
 
 
