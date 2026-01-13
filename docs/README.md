@@ -58,7 +58,7 @@ PFTA is a treasury execution engine supporting:
 cd PFTA
 npm install
 npx hardhat compile
-npx hardhat test
+npx hardhat test```
 
 **Status:** Stable and tested
 
@@ -144,5 +144,6 @@ Repository history has been rewritten to remove committed dependencies.
 ## License
 
 MIT
+
 
 
